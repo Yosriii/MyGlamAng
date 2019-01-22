@@ -1,0 +1,37 @@
+.mobile-section {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.mobile-section-text {
+    align-self: center;
+    text-align: center;
+}
+
+
+
+.store {
+    background-image: url(../../assets/images/ic_available_app_store_norml@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 65px;
+    margin-top: 10px;
+}
+.store:hover{
+    background-image: url(../../assets/images/ic_available_app_store_pressed@1x.png);
+    cursor: pointer;
+}
+
+.gplay {
+    background-image: url(../../assets/images/ic_available_google_play_normal@1x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 65px;
+    margin-top: 10px;
+}
+
+.gplay:hover{
+    background-image: url(../../assets/images/ic_available_google_play_pressed@1x.png);
+    cursor: pointer;
+}

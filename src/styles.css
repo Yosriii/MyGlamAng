@@ -1,1 +1,27 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.section-title {
+    padding-top: 50px;
+    margin-bottom: 70px;
+    color: #D12731;
+    display: flex;
+    justify-content: center;
+    background-image: url(./assets/images/sliderImageUnderLine.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.action-buttons {
+    margin: 50px 0px;
+    display: flex;
+    justify-content: center;
+}

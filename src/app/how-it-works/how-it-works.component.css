@@ -1,0 +1,10 @@
+.how-it-works-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.how-it-works-item img {
+    margin-bottom: 40px;
+}
