@@ -10,6 +10,8 @@ import { TextSliderComponent } from './text-slider/text-slider.component';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { MobileSectionComponent } from './mobile-section/mobile-section.component';
 import { FooterComponent } from './footer/footer.component';
+import { CardDataService } from './card-data.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -26,8 +28,9 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [CardDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

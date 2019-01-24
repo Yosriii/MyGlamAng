@@ -5,24 +5,22 @@
       </div>
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <div id="carousel-inner" class="carousel-inner row w-100 mx-auto">
-               <div class="carousel-item col-md-4 active">
+               <div *ngFor="let data of cardData ; let isFirst = first" [class.active]="isFirst" class="carousel-item col-md-4">
                   <div class="card">
-                      <img class="card-img-top img-fluid" src="../../assets/images/categ_lashes_home@1x.png" alt="Card image cap">
-
+                      <img class="card-img-top img-fluid" src="http://{{data.imagePath}}" alt="Card image cap">
                       <div class="card-body">
                           <div class="image-underline"></div>
-                          <h4 class="card-title">Lashes & Brows</h4>
-                          <p class="card-text">This is a longer card with supporting text below as a natural
-                              lead-in
-                              to additional content. This content is a little bit longer.</p>
-                          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                          <h4 class="card-title">{{data.label}}</h4>
+                          <p *ngFor="let s of data.Services" class="card-text">{{s.label_service}}</p>
+                          <p class="card-text"><small class="text-muted"></small></p>
                       </div>
                   </div>
-              </div> 
-               <div class="carousel-item col-md-4">
+                </div>
+                
+                
+               <!-- <div class="carousel-item col-md-4">
                   <div class="card">
                       <img class="card-img-top img-fluid" src="../../assets/images/categ_nails_home@1x.png" alt="Card image cap">
-
                       <div class="card-body">
                           <div class="image-underline"></div>
                           <h4 class="card-title">Nails & More</h4>
@@ -88,7 +86,7 @@
                           <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
                   </div>
-              </div>
+              </div> -->
           </div> 
           <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>

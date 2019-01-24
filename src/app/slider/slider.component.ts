@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardDataService } from '../card-data.service';
 
 @Component({
   selector: 'app-slider',
@@ -7,12 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderComponent implements OnInit {
 
-  constructor() { }
+  public cardData = [] ;
+
+  constructor(private _cardDataService: CardDataService) { }
 
   ngOnInit() {
-  }
-
-
+    this._cardDataService.getCardData().subscribe(file => {
+      this.cardData = file.data
+    }) ;
+  } 
 
 }
 
